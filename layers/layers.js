@@ -30,102 +30,95 @@ var lyr_District_1 = new ol.layer.Vector({
                 interactive: false,
                 title: '<img src="styles/legend/District_1.png" /> District'
             });
-var format_Roads_2 = new ol.format.GeoJSON();
-var features_Roads_2 = format_Roads_2.readFeatures(json_Roads_2, 
+var format_Town_2 = new ol.format.GeoJSON();
+var features_Town_2 = format_Town_2.readFeatures(json_Town_2, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Roads_2 = new ol.source.Vector({
+var jsonSource_Town_2 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Roads_2.addFeatures(features_Roads_2);
-var lyr_Roads_2 = new ol.layer.Vector({
+jsonSource_Town_2.addFeatures(features_Town_2);
+var lyr_Town_2 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Roads_2, 
-                style: style_Roads_2,
+                source:jsonSource_Town_2, 
+                style: style_Town_2,
+                popuplayertitle: 'Town',
+                interactive: false,
+                title: '<img src="styles/legend/Town_2.png" /> Town'
+            });
+var format_Roads_3 = new ol.format.GeoJSON();
+var features_Roads_3 = format_Roads_3.readFeatures(json_Roads_3, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Roads_3 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Roads_3.addFeatures(features_Roads_3);
+var lyr_Roads_3 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Roads_3, 
+                style: style_Roads_3,
                 popuplayertitle: 'Roads',
                 interactive: true,
     title: 'Roads<br />\
-    <img src="styles/legend/Roads_2_0.png" /> motorway<br />\
-    <img src="styles/legend/Roads_2_1.png" /> motorway_link<br />\
-    <img src="styles/legend/Roads_2_2.png" /> primary<br />\
-    <img src="styles/legend/Roads_2_3.png" /> primary_link<br />\
-    <img src="styles/legend/Roads_2_4.png" /> residential<br />\
-    <img src="styles/legend/Roads_2_5.png" /> secondary<br />\
-    <img src="styles/legend/Roads_2_6.png" /> secondary_link<br />\
-    <img src="styles/legend/Roads_2_7.png" /> tertiary<br />\
-    <img src="styles/legend/Roads_2_8.png" /> tertiary_link<br />\
-    <img src="styles/legend/Roads_2_9.png" /> trunk<br />\
-    <img src="styles/legend/Roads_2_10.png" /> unclassified<br />' });
-var format_MotorcycleRating_3 = new ol.format.GeoJSON();
-var features_MotorcycleRating_3 = format_MotorcycleRating_3.readFeatures(json_MotorcycleRating_3, 
+    <img src="styles/legend/Roads_3_0.png" /> Highway<br />\
+    <img src="styles/legend/Roads_3_1.png" /> Major Road<br />\
+    <img src="styles/legend/Roads_3_2.png" /> Minor Road<br />\
+    <img src="styles/legend/Roads_3_3.png" /> Normal Road<br />' });
+var format_MotorcycleRating_4 = new ol.format.GeoJSON();
+var features_MotorcycleRating_4 = format_MotorcycleRating_4.readFeatures(json_MotorcycleRating_4, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_MotorcycleRating_3 = new ol.source.Vector({
+var jsonSource_MotorcycleRating_4 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_MotorcycleRating_3.addFeatures(features_MotorcycleRating_3);
-var lyr_MotorcycleRating_3 = new ol.layer.Vector({
+jsonSource_MotorcycleRating_4.addFeatures(features_MotorcycleRating_4);
+var lyr_MotorcycleRating_4 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_MotorcycleRating_3, 
-                style: style_MotorcycleRating_3,
+                source:jsonSource_MotorcycleRating_4, 
+                style: style_MotorcycleRating_4,
                 popuplayertitle: 'Motorcycle Rating',
                 interactive: true,
     title: 'Motorcycle Rating<br />\
-    <img src="styles/legend/MotorcycleRating_3_0.png" /> 1 star<br />\
-    <img src="styles/legend/MotorcycleRating_3_1.png" /> 2 star<br />\
-    <img src="styles/legend/MotorcycleRating_3_2.png" /> 3 star<br />\
-    <img src="styles/legend/MotorcycleRating_3_3.png" /> <br />' });
-var format_CarRating_4 = new ol.format.GeoJSON();
-var features_CarRating_4 = format_CarRating_4.readFeatures(json_CarRating_4, 
+    <img src="styles/legend/MotorcycleRating_4_0.png" /> 1 star<br />\
+    <img src="styles/legend/MotorcycleRating_4_1.png" /> 2 star<br />\
+    <img src="styles/legend/MotorcycleRating_4_2.png" /> 3 star<br />\
+    <img src="styles/legend/MotorcycleRating_4_3.png" /> <br />' });
+var format_CarRating_5 = new ol.format.GeoJSON();
+var features_CarRating_5 = format_CarRating_5.readFeatures(json_CarRating_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CarRating_4 = new ol.source.Vector({
+var jsonSource_CarRating_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_CarRating_4.addFeatures(features_CarRating_4);
-var lyr_CarRating_4 = new ol.layer.Vector({
+jsonSource_CarRating_5.addFeatures(features_CarRating_5);
+var lyr_CarRating_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_CarRating_4, 
-                style: style_CarRating_4,
+                source:jsonSource_CarRating_5, 
+                style: style_CarRating_5,
                 popuplayertitle: 'Car Rating',
                 interactive: true,
     title: 'Car Rating<br />\
-    <img src="styles/legend/CarRating_4_0.png" /> 2 star<br />\
-    <img src="styles/legend/CarRating_4_1.png" /> 3 star<br />\
-    <img src="styles/legend/CarRating_4_2.png" /> 4 star<br />' });
-var format_town_5 = new ol.format.GeoJSON();
-var features_town_5 = format_town_5.readFeatures(json_town_5, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_town_5 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_town_5.addFeatures(features_town_5);
-var lyr_town_5 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_town_5, 
-                style: style_town_5,
-                popuplayertitle: 'town',
-                interactive: false,
-                title: '<img src="styles/legend/town_5.png" /> town'
-            });
+    <img src="styles/legend/CarRating_5_0.png" /> 2 star<br />\
+    <img src="styles/legend/CarRating_5_1.png" /> 3 star<br />\
+    <img src="styles/legend/CarRating_5_2.png" /> 4 star<br />' });
 
-lyr_State_0.setVisible(true);lyr_District_1.setVisible(true);lyr_Roads_2.setVisible(true);lyr_MotorcycleRating_3.setVisible(false);lyr_CarRating_4.setVisible(true);lyr_town_5.setVisible(true);
-var layersList = [lyr_State_0,lyr_District_1,lyr_Roads_2,lyr_MotorcycleRating_3,lyr_CarRating_4,lyr_town_5];
+lyr_State_0.setVisible(true);lyr_District_1.setVisible(true);lyr_Town_2.setVisible(true);lyr_Roads_3.setVisible(true);lyr_MotorcycleRating_4.setVisible(false);lyr_CarRating_5.setVisible(true);
+var layersList = [lyr_State_0,lyr_District_1,lyr_Town_2,lyr_Roads_3,lyr_MotorcycleRating_4,lyr_CarRating_5];
 lyr_State_0.set('fieldAliases', {'FCD': 'FCD', 'FNM': 'FNM', 'NAM': 'NAM', 'KOD_NEGERI': 'KOD_NEGERI', 'GlobalID': 'GlobalID', });
 lyr_District_1.set('fieldAliases', {'FCD': 'FCD', 'FNM': 'FNM', 'NAM': 'NAM', 'KOD_NEGERI': 'KOD_NEGERI', 'KOD_DAERAH': 'KOD_DAERAH', 'GlobalID': 'GlobalID', });
-lyr_Roads_2.set('fieldAliases', {'osm_id': 'osm_id', 'code': 'code', 'fclass': 'fclass', 'name': 'name', 'ref': 'ref', 'oneway': 'oneway', 'maxspeed': 'maxspeed', 'layer': 'layer', 'bridge': 'bridge', 'tunnel': 'tunnel', });
-lyr_MotorcycleRating_3.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'rating': 'rating', });
-lyr_CarRating_4.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'rating': 'rating', });
-lyr_town_5.set('fieldAliases', {'osm_id': 'osm_id', 'code': 'code', 'fclass': 'fclass', 'population': 'population', 'name': 'name', });
+lyr_Town_2.set('fieldAliases', {'osm_id': 'osm_id', 'code': 'code', 'fclass': 'fclass', 'population': 'population', 'name': 'name', });
+lyr_Roads_3.set('fieldAliases', {'osm_id': 'osm_id', 'code': 'code', 'fclass': 'fclass', 'name': 'name', 'ref': 'ref', 'oneway': 'oneway', 'maxspeed': 'maxspeed', 'layer': 'layer', 'bridge': 'bridge', 'tunnel': 'tunnel', });
+lyr_MotorcycleRating_4.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'rating': 'rating', });
+lyr_CarRating_5.set('fieldAliases', {'qc_id': 'qc_id', 'id': 'id', 'rating': 'rating', });
 lyr_State_0.set('fieldImages', {'FCD': 'TextEdit', 'FNM': 'TextEdit', 'NAM': 'TextEdit', 'KOD_NEGERI': 'TextEdit', 'GlobalID': 'TextEdit', });
 lyr_District_1.set('fieldImages', {'FCD': 'TextEdit', 'FNM': 'TextEdit', 'NAM': 'TextEdit', 'KOD_NEGERI': 'TextEdit', 'KOD_DAERAH': 'TextEdit', 'GlobalID': 'TextEdit', });
-lyr_Roads_2.set('fieldImages', {'osm_id': 'TextEdit', 'code': 'Range', 'fclass': 'TextEdit', 'name': 'TextEdit', 'ref': 'TextEdit', 'oneway': 'TextEdit', 'maxspeed': 'Range', 'layer': 'TextEdit', 'bridge': 'TextEdit', 'tunnel': 'TextEdit', });
-lyr_MotorcycleRating_3.set('fieldImages', {'qc_id': 'Range', 'id': 'TextEdit', 'rating': 'TextEdit', });
-lyr_CarRating_4.set('fieldImages', {'qc_id': 'Range', 'id': 'TextEdit', 'rating': 'TextEdit', });
-lyr_town_5.set('fieldImages', {'osm_id': 'TextEdit', 'code': 'Range', 'fclass': 'TextEdit', 'population': 'TextEdit', 'name': 'TextEdit', });
+lyr_Town_2.set('fieldImages', {'osm_id': 'TextEdit', 'code': 'Range', 'fclass': 'TextEdit', 'population': 'TextEdit', 'name': 'TextEdit', });
+lyr_Roads_3.set('fieldImages', {'osm_id': 'TextEdit', 'code': 'Range', 'fclass': 'TextEdit', 'name': 'TextEdit', 'ref': 'TextEdit', 'oneway': 'TextEdit', 'maxspeed': 'Range', 'layer': 'TextEdit', 'bridge': 'TextEdit', 'tunnel': 'TextEdit', });
+lyr_MotorcycleRating_4.set('fieldImages', {'qc_id': 'Range', 'id': 'TextEdit', 'rating': 'TextEdit', });
+lyr_CarRating_5.set('fieldImages', {'qc_id': 'Range', 'id': 'TextEdit', 'rating': 'TextEdit', });
 lyr_State_0.set('fieldLabels', {'FCD': 'no label', 'FNM': 'no label', 'NAM': 'no label', 'KOD_NEGERI': 'no label', 'GlobalID': 'no label', });
 lyr_District_1.set('fieldLabels', {'FCD': 'no label', 'FNM': 'no label', 'NAM': 'no label', 'KOD_NEGERI': 'no label', 'KOD_DAERAH': 'no label', 'GlobalID': 'no label', });
-lyr_Roads_2.set('fieldLabels', {'osm_id': 'hidden field', 'code': 'hidden field', 'fclass': 'hidden field', 'name': 'inline label - visible with data', 'ref': 'hidden field', 'oneway': 'hidden field', 'maxspeed': 'hidden field', 'layer': 'hidden field', 'bridge': 'hidden field', 'tunnel': 'hidden field', });
-lyr_MotorcycleRating_3.set('fieldLabels', {'qc_id': 'hidden field', 'id': 'hidden field', 'rating': 'inline label - visible with data', });
-lyr_CarRating_4.set('fieldLabels', {'qc_id': 'hidden field', 'id': 'hidden field', 'rating': 'inline label - visible with data', });
-lyr_town_5.set('fieldLabels', {'osm_id': 'no label', 'code': 'no label', 'fclass': 'no label', 'population': 'no label', 'name': 'no label', });
-lyr_town_5.on('precompose', function(evt) {
+lyr_Town_2.set('fieldLabels', {'osm_id': 'no label', 'code': 'no label', 'fclass': 'no label', 'population': 'no label', 'name': 'no label', });
+lyr_Roads_3.set('fieldLabels', {'osm_id': 'hidden field', 'code': 'hidden field', 'fclass': 'no label', 'name': 'inline label - visible with data', 'ref': 'hidden field', 'oneway': 'hidden field', 'maxspeed': 'hidden field', 'layer': 'hidden field', 'bridge': 'hidden field', 'tunnel': 'hidden field', });
+lyr_MotorcycleRating_4.set('fieldLabels', {'qc_id': 'hidden field', 'id': 'hidden field', 'rating': 'inline label - visible with data', });
+lyr_CarRating_5.set('fieldLabels', {'qc_id': 'hidden field', 'id': 'hidden field', 'rating': 'inline label - visible with data', });
+lyr_CarRating_5.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
